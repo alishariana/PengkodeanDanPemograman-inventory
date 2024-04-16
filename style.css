@@ -1,0 +1,128 @@
+
+body {
+/*
+    padding: 0;
+    margin: 0;
+*/
+   
+}
+
+
+/*THIS IS FOR LOGIN FORM*/
+
+/*
+.bckgroundimg {
+     background: url(data:image/jpeg;base64,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);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+*/
+
+img {
+    width: 100%;
+    height: 100%;            
+    position: absolute;
+    display: flex;
+    /*
+    top: 0;
+    left: 0;
+    opacity: 0.;
+*/
+}
+
+.wrapper-login
+{ 
+    width: 350px; 
+    padding: 20px;
+    z-index: 9999; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: grey;
+    opacity: 0.;
+    padding: 50px;    
+}
+
+.wrapper {
+    width: 350px; 
+    padding: 20px;
+}
+
+/*END OF LOGIN FORM*/
+
+/*THIS IS FOR TOPBAR*/
+
+.brand {
+    position: absolute;
+/*    border: 1px solid green;*/
+    width: 100%;
+    margin: 5px;
+    z-index: auto;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+}
+
+/*THIS IS FOR SIDEBAR*/
+
+/* This is SIDEBAR */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.sidebar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+/*END OF SIDEBAR*/
+
+/*THIS IS FOR MAIN CONTENT*/
+
+div.content-table 
+{
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 100%;
+    margin-bottom: 10px;
+    background-color: #ffff;
+
+}
+
+div.tajuk 
+{
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 100%;
+    margin-bottom: 10px;
+    background-color: #ffff;
+}
+
+div.tambah-user {
+    float: right;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+/*END OF MAIN CONTENT*/
